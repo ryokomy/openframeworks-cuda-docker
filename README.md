@@ -5,7 +5,7 @@ When you can't build openFrameworks on Ubuntu, docker is possibly the solution.
 nvidia-docker
 
 ## how to run openFrameworks example
-just type the following commands on terminal.
+just type the following commands on terminal. ($ -> local, \# -> docker)  
 ```
 $ sudo docker pull ryokomy/openframeworks-cuda
 $ xhost +
@@ -16,6 +16,7 @@ $ sudo nvidia-docker run -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-uni
 # make
 # make run
 ```
+![](ofimg.png)
 
 ## environment in docker
 - OS: Ubuntu14.04
